@@ -58,7 +58,11 @@
      color: black;
      line-height : 35px;
    }
-   .navBar .navbar-UserChoosen.active {
+   .navBar .navbar-UserChoosen:hover {
+    color: rgba(0, 0, 0, 0.7);
+    border-color: rgba(0, 0, 0, 0.7);
+   }
+   .navBar .navbar-UserChoosen:active {
     border: 2px solid red;
     color : red;
    }
@@ -68,29 +72,21 @@
     <div class="wrap-navBar-InfoUser">
         <img class="avatar" src="./images/havert.jpg" alt="">
         <div class="navBar-UserUpdate">
-         <a href="#"> <i class="fa-solid fa-highlighter"></i></a>
-         <a href="#">Sửa hồ sơ</a>
+         <a href="UpdateProfileUser"> <i class="fa-solid fa-highlighter"></i></a>
+         <a href="UpdateProfileUser">Sửa hồ sơ</a>
         </div>
     </div>
     <h4>Nguyễn Đạt</h4>
-   <a class="navbar-UserChoosen" href="#" onclick="changeColor(this)">Hồ Sơ</a>
-   <a class="navbar-UserChoosen" href="#" onclick="changeColor(this)">Đổi Mật Khẩu</a>
-   <a class="navbar-UserChoosen" href="#" onclick="changeColor(this)">Đơn Mua</a>
-   <a class="navbar-UserChoosen" href="#" onclick="changeColor(this)">Kho Voucher</a>
+   <a class="navbar-UserChoosen" href="UserProfile" onclick="changeColor(this)">Hồ Sơ</a>
+   <a class="navbar-UserChoosen" href="UpdateProfileUser" onclick="changeColor(this)">Đổi Mật Khẩu</a>
+   <a class="navbar-UserChoosen" href="ProfileUserOrder" onclick="changeColor(this)">Đơn Mua</a>
+   <a class="navbar-UserChoosen" href="ProfileUserRecentView" onclick="changeColor(this)">Đã Xem</a>
   </div>
   @yield('content')
 
 
 
-<script>
-function changeColor(element) {
-    var buttons = document.querySelectorAll('.navbar-UserChoosen');
-    buttons.forEach(function(btn) {
-        btn.classList.remove('active');
-    });
-    element.classList.add('active');
-}
-</script>
+
 
 </body>
 </html>

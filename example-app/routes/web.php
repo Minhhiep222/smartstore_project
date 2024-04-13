@@ -14,5 +14,20 @@ Route::get('MenuUser', function () {
 Route::get('UserProfile', function () {
     return view('UserProfile');
 });
+Route::get('UpdateProfileUser', function () {
+    return view('UpdateProfileUser');
+});
+Route::get('ProfileUserOrder', function () {
+    return view('ProfileUserOrder');
+});
+Route::get('ProfileUserRecentView', function () {
+    return view('ProfileUserRecentView');
+});
+Route::get('IndexSeller', function () {
+    return view('IndexSeller');
+});
+
+
+
 
 
