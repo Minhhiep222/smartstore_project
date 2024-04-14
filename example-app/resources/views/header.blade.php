@@ -6,6 +6,8 @@
         <title>Document</title>
         <link type="text/css" href="/css/main.css" rel="stylesheet">
         <link type="text/css" href="/css/base.css" rel="stylesheet">
+        <link type="text/css" href="/css/seller.css" rel="stylesheet">
+        <link type="text/scss" href="/scss/seller.scss" rel="stylesheet">
         <link rel="stylesheet" href="/font/fontawesome-free-6.5.1-web/css/all.min.css">
     </head>
     <body>
@@ -219,14 +221,16 @@
                 </div>
             </header>
             <!-- /HEADER -->
+
             @yield('content')
             
-        <footer class="footer">
-            <div class="title_footer">
-                Nhóm E Thực Hiện: ĐỒ ÁN MÔN BACK-END
-            </div>
-        </footer>
-        <!-- FOOTER  -->
+            <!-- FOOTER  -->
+            <footer class="footer">
+                <div class="title_footer">
+                    Nhóm E Thực Hiện: ĐỒ ÁN MÔN BACK-END
+                </div>
+            </footer>
+            <!-- FOOTER  -->
 
         </div>
         <!-- <script src="/js/action.js"></script> -->

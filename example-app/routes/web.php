@@ -14,3 +14,8 @@ Route::get('header', function () {
 Route::get('home', function () {
     return view('auth.home');
 });
+
+Route::get('seller', function () {
+    return view('auth.seller');
+});
+
