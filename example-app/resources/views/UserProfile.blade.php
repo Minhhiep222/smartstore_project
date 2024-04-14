@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UserProfile</title>
+    <link href="{{ asset('styles.css') }}" rel="stylesheet">
+    <script src="{{ asset('action.js') }}"></script>
 </head>
 <style>
-    .main-ProfileUser {
+    /* .main-ProfileUser {
         position: absolute;
         left : 29%;
     }
@@ -150,7 +152,7 @@
         transform: scaleX(1.4) scaleY(1.7);
        
     }
-}
+} */
 </style>
 <body>
 @extends('MenuUser')
@@ -195,40 +197,40 @@
 
 <script>
 
-document.addEventListener("DOMContentLoaded", function() {
-    var textElement = document.getElementById('bankaccount');
-    textElement.textContent = textElement.textContent.replace(/[a-zA-Z0-9]/g, '*');
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//     var textElement = document.getElementById('bankaccount');
+//     textElement.textContent = textElement.textContent.replace(/[a-zA-Z0-9]/g, '*');
+// });
 
-document.addEventListener("DOMContentLoaded", function() {
-    var textElement = document.getElementById('phone');
-    var textContent = textElement.textContent;
-    var newTextContent = '';
+// document.addEventListener("DOMContentLoaded", function() {
+//     var textElement = document.getElementById('phone');
+//     var textContent = textElement.textContent;
+//     var newTextContent = '';
     
-    for (var i = 0; i < textContent.length - 2; i++) {
-        newTextContent += '*';
-    }
+//     for (var i = 0; i < textContent.length - 2; i++) {
+//         newTextContent += '*';
+//     }
     
-    newTextContent += textContent.slice(-2); // Thêm lại hai ký tự cuối cùng
-    textElement.textContent = newTextContent;
-});
+//     newTextContent += textContent.slice(-2); // Thêm lại hai ký tự cuối cùng
+//     textElement.textContent = newTextContent;
+// });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var emailElement = document.getElementById('email');
-    var email = emailElement.textContent;
-    var maskedEmail = maskEmail(email);
-    emailElement.textContent = maskedEmail;
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     var emailElement = document.getElementById('email');
+//     var email = emailElement.textContent;
+//     var maskedEmail = maskEmail(email);
+//     emailElement.textContent = maskedEmail;
+// });
 
-function maskEmail(email) {
-    var atIndex = email.indexOf('@');
-    if (atIndex > 2) {
-        var maskedPortion = email.substr(2, atIndex - 2).replace(/./g, '*');
-        var maskedEmail = email.substr(0, 2) + maskedPortion + email.substr(atIndex);
-        return maskedEmail;
-    }
-    return email;
-}
+// function maskEmail(email) {
+//     var atIndex = email.indexOf('@');
+//     if (atIndex > 2) {
+//         var maskedPortion = email.substr(2, atIndex - 2).replace(/./g, '*');
+//         var maskedEmail = email.substr(0, 2) + maskedPortion + email.substr(atIndex);
+//         return maskedEmail;
+//     }
+//     return email;
+// }
 
 
 </script>

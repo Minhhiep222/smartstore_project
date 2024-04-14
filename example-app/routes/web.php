@@ -23,11 +23,20 @@ Route::get('ProfileUserOrder', function () {
 Route::get('ProfileUserRecentView', function () {
     return view('ProfileUserRecentView');
 });
-Route::get('IndexSeller', function () {
-    return view('IndexSeller');
+Route::get('SupportUser', function () {
+    return view('SupportUser');
+});
+Route::get('Login', function () {
+    return view('Login');
+});
+Route::get('Register', function () {
+    return view('Register');
 });
 
 
 
+
+
+   
 
 

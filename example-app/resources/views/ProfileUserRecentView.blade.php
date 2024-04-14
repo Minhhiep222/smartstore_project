@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-./<head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProfileUserRecentView</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <link href="{{ asset('styles2.css') }}" rel="stylesheet">
 </head>
 <style>
-    .main-ProfileUserOrder {
+    /* .main-ProfileUserOrder {
         position: absolute;
         left : 29%;
         
@@ -112,7 +112,7 @@
     background-size:cover;
     margin-top:15px;
     margin-bottom:15px;
-}
+} */
 
 </style>
 <body>
