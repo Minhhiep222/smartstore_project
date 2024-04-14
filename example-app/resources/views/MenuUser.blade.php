@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NavBarMenu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
+    <link href="{{ asset('styles.css') }}" rel="stylesheet">
+  </head>
 <style>
-   .navBar {
+   /* .navBar {
     margin-top: 45px;
     width: 300px;
     border-right: solid 2px rgba(0, 0, 0, 0.2);
@@ -65,7 +66,7 @@
    .navBar .navbar-UserChoosen:active {
     border: 2px solid red;
     color : red;
-   }
+   } */
 </style>
 <body>
   <div class="navBar">
