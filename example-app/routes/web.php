@@ -6,31 +6,34 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('ThemXoaSuaProduct', function () {
-    return view('ThemXoaSuaProduct');
+    return view('themXoaSuaProduct');
 });
 Route::get('MenuUser', function () {
-    return view('MenuUser');
+    return view('menuUser');
 });
 Route::get('UserProfile', function () {
-    return view('UserProfile');
+    return view('userProfile');
 });
 Route::get('UpdateProfileUser', function () {
-    return view('UpdateProfileUser');
+    return view('updateProfileUser');
 });
 Route::get('ProfileUserOrder', function () {
-    return view('ProfileUserOrder');
+    return view('profileUserOrder');
 });
 Route::get('ProfileUserRecentView', function () {
-    return view('ProfileUserRecentView');
+    return view('profileUserRecentView');
 });
 Route::get('SupportUser', function () {
-    return view('SupportUser');
+    return view('supportUser');
 });
 Route::get('Login', function () {
-    return view('Login');
+    return view('login');
 });
 Route::get('Register', function () {
-    return view('Register');
+    return view('register');
+});
+Route::get('productDetail', function () {
+    return view('productDetail');
 });
 
 

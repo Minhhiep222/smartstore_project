@@ -1,0 +1,171 @@
+
+table {
+    margin-top : 150px;
+    text-align: left;
+    margin-left : 140px;
+}
+.main-tr td {
+    font-weight: bold;
+    font-size : 24px;
+    padding-bottom: 14px;
+}
+
+.btn-success {
+    display : flex;
+    margin-top : 10px;
+    position : absolute;
+    left : 85%;
+    top : 50px;
+}
+.btnDelete {
+    display : flex;
+    height : 37px;
+    width : 100px;
+    border: 1px solid red;
+    justify-content : center;
+    background-color : white;
+    border-radius : 5px;
+    position : relative;
+  
+}
+.btnDelete::before {
+    content:"";
+    inset:0;
+    position: absolute;
+    z-index:1;
+    background-color: red;  
+    z-index:-1;
+    border-radius : 5px;
+}
+
+.btnUpdate {
+    margin-top: 15px;
+    display : flex;
+    height : 37px;
+    width : 100px;
+    border: 1px solid rgb(94, 219, 219); 
+    justify-content : center;
+    background-color: white;
+    border-radius : 5px;
+    position:relative;
+}
+.btnUpdate::before{
+    content:"";
+    inset:0;
+    position: absolute;
+    z-index:1;
+    background-color: rgb(94, 219, 219);
+    z-index:-1;
+    border-radius : 5px;
+}
+
+.btnDelete h4 {
+    color : red;
+    font-size: 21px;
+    margin-top: 3px;
+    
+}
+.btnUpdate h4 {
+    color : rgb(94, 219, 219); ;
+    font-size: 21px;
+    margin-top: 3px;
+    
+}
+
+.fa-wrench {
+    font-size : 15px;
+    margin-top : 10px;
+    margin-right : 10px;
+   
+} 
+.fa-circle-minus {
+    font-size : 15px;
+    margin-top : 10px;
+    margin-right : 10px;
+   
+} 
+.fa-regular {
+    margin-right : 10px;
+    font-size : 23px;
+    margin-top : 5px;
+    background-color: black;
+}
+.main-tr {
+    border-bottom : 3px solid rgba(0, 0, 0, 0.2);
+}
+.sub-tr {
+    border-bottom : 3px solid rgba(0, 0, 0, 0.2);
+  
+}
+.sub-tr td:nth-child(2) {
+  font-size: 20px;
+  color : rgb(29, 204, 204);
+}
+.sub-tr td:nth-child(3) {
+  font-size: 20px;
+  display: flex;
+  margin-top : 75px;
+  
+}
+.sub-tr td:nth-child(4) {
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+img{
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+    margin-bottom : 15px;
+    
+}
+.cach {
+    opacity: 0;
+}
+.btnDelete:active::before 
+{
+  animation: scaleButton 0.5s ease;
+}
+.btnUpdate:active::before 
+{
+  animation: scaleButton 0.5s ease;
+}
+.btnDelete:hover h4
+{
+    opacity:0.7;
+}
+.btnDelete:hover i
+{
+    opacity:0.7;   
+}
+.btnDelete:hover 
+{
+    
+    border-color: rgba(255, 0, 0, 0.5);
+}
+
+.btnUpdate:hover h4
+{
+    opacity:0.7;
+}
+.btnUpdate:hover i
+{
+    opacity:0.7;   
+}
+.btnUpdate:hover 
+{
+    border-color: rgb(94, 219, 219, 0.5);
+}
+
+
+@keyframes scaleButton {
+    0% {
+        opacity:0;
+        transform: scaleX(1) scaleY(1);
+    }
+    100% {
+        opacity: 0.12;
+        transform: scaleX(1.4) scaleY(1.7);
+       
+    }
+}

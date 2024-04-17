@@ -1,0 +1,168 @@
+.main-ProfileUser {
+    position: absolute;
+    left : 29%;
+}
+.main-ProfileUser h3 {
+    font-size : 30px;
+}
+.main-ProfileUser .ThanhNgang {
+    width: 800px;
+    border:solid 2px rgba(0, 0, 0, 0.2);
+}
+.main-ProfileUser .thanhDoc {
+    border-right:solid 2px rgba(0, 0, 0, 0.2);
+    height : 432px;
+    margin-top: 17px;
+    position : absolute;
+    right: 40%;
+}
+.main-ProfileUser .btnUpdate {
+margin-top: 15px;
+display : flex;
+height : 40px;
+width : 130px;
+border: 1px solid rgb(94, 219, 219); 
+justify-content : center;
+background-color: white;
+border-radius : 5px;
+position:relative;
+margin-left: 200px;
+text-decoration: none;
+}
+.main-ProfileUser .btnUpdate::before{
+content:"";
+inset:0;
+position: absolute;
+z-index:1;
+background-color: rgb(94, 219, 219);
+z-index:-1;
+border-radius : 5px;
+}
+.main-ProfileUser .btnUpdate h4 {
+color: rgb(94, 219, 219); 
+font-size: 25px;
+margin-top: 3px;
+line-height: 30px;
+}
+
+.main-ProfileUser .btnUpdate .fa-wrench {
+font-size : 20px;
+margin-top : 2px;
+margin-right : 10px;
+color : black;
+line-height: 30px;
+}
+.main-ProfileUser .Profile-UserInfomation{
+ display: flex;
+}
+.main-ProfileUser .Profile-UserInfomation p{
+ font-size: 18px;
+ margin-top: 33px;
+ margin-left: 30px;
+ position : absolute;
+ left: 20%;
+ 
+}
+.main-ProfileUser .Profile-UserInfomation h4{
+ font-size: 22px;
+}
+.main-ProfileUser .Profile-UserInfomation:nth-child(4)  {
+margin-top: -20px;
+}
+.main-ProfileUser .Profile-UserInfomation:nth-child(4) p {
+
+}
+.main-ProfileUser .Profile-UserInfomation:nth-child(5)  {
+margin-top: -20px;
+}
+.main-ProfileUser .Profile-UserInfomation:nth-child(5) p {
+
+}
+.main-ProfileUser .Profile-UserInfomation:nth-child(6)  {
+margin-top: -20px;
+}
+.main-ProfileUser .Profile-UserInfomation:nth-child(6) p {
+  
+}
+.main-ProfileUser .Profile-UserInfomation:nth-child(7)  {
+margin-top: -20px;
+}
+.main-ProfileUser .Profile-UserInfomation:nth-child(7) p {
+
+}
+.main-ProfileUser .Profile-UserInfomation:nth-child(8)  {
+margin-top: -20px;
+}
+.main-ProfileUser .Profile-UserInfomation:nth-child(8) p {
+
+}
+.main-ProfileUser .Profile-UserInfomation:nth-child(9)  {
+margin-top: -20px;
+}
+.main-ProfileUser .Profile-UserImages
+{
+    position: absolute;
+    right: 2%;
+    top: 25%;
+}
+.main-ProfileUser .Profile-UserImages .avatar {
+width: 180px;
+height: 180px;
+background-size:cover;
+border-radius: 100px;
+}
+.main-ProfileUser .Profile-UserImages p {
+ font-size : 30px;
+ text-align: center;
+}
+.main-ProfileUser  .btnUpdate:active::before 
+{
+animation: scaleButton 0.5s ease;
+ }
+ .main-ProfileUser  .btnUpdate:hover h4
+ {
+ opacity:0.7;
+    }
+.main-ProfileUser  .btnUpdate:hover i
+{
+opacity:0.7;   
+}
+.main-ProfileUser .btnUpdate:hover 
+{
+ border-color: rgb(94, 219, 219, 0.5);
+}
+.top-SupportStore {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    line-height: 60px;
+    color: black;
+    position: absolute;
+    margin-left: 860px;
+    margin-top: 10px;
+}
+
+.top-SupportStore .fa-store {
+    margin-left: 100px;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-right:5px;
+}
+.top-SupportStore h3 {
+    font-size: 29px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+@keyframes scaleButton {
+0% {
+    opacity:0;
+    transform: scaleX(1) scaleY(1);
+}
+100% {
+    opacity: 0.12;
+    transform: scaleX(1.4) scaleY(1.7);
+   
+}
+}

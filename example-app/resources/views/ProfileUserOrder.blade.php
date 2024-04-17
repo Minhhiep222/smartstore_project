@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProfileUserRecenView</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="{{ asset('styles.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/profileUserOrder.css') }}">
 </head>
 <style>
     /* .main-ProfileUserOrder {
@@ -136,7 +136,31 @@
     background-size:cover;
     margin-top:15px;
     margin-bottom:15px;
-} */
+}
+
+.top-SupportStore {
+        text-decoration: none;
+        display: flex;
+        width: 100%;
+        height: 80px;
+        line-height: 60px;
+        color: black;
+        position: absolute;
+        margin-left: 860px;
+        margin-top: 10px;
+    }
+  
+    .top-SupportStore .fa-store {
+        margin-left: 100px;
+        font-size: 40px;
+        margin-top: 15px;
+        margin-right:5px;
+    }
+    .top-SupportStore h3 {
+        font-size: 29px;
+        display: inline-block;
+        margin-top: 10px;
+    } */
 
 </style>
 <body>
@@ -176,10 +200,11 @@
 <h4>Thành Tiền:</h4>
 <p>57.000</p>
 </div>
-
-
 </div>
-
+<a href="" class="top-SupportStore">
+    <i class="fa-solid fa-store"></i>
+    <h3>Smartstore</h3>
+    </a>
 @endsection
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UpdateMenuUser</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="{{ asset('styles2.css') }}" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ asset('/css/updateProfileUser.css') }}">
 </head>
 <style>
     /* .main-ProfileUser {
@@ -192,12 +192,35 @@
         transform: scaleX(1.4) scaleY(1.7);
        
     }
-} */
+}
+.top-SupportStore {
+        text-decoration: none;
+        display: flex;
+        width: 100%;
+        height: 80px;
+        line-height: 60px;
+        color: black;
+        position: absolute;
+        margin-left: 860px;
+        margin-top: 10px;
+    }
+  
+    .top-SupportStore .fa-store {
+        margin-left: 100px;
+        font-size: 40px;
+        margin-top: 15px;
+        margin-right:5px;
+    }
+    .top-SupportStore h3 {
+        font-size: 29px;
+        display: inline-block;
+        margin-top: 10px;
+    } */
 </style>
 <body>
 @extends('MenuUser')
 @section('content')
-<form action="" method="post">
+<form action="" method="">
 <div class="main-ProfileUser">
     <h3>Thay Đổi Thông Tin Cá Nhân</h3>
     <div class="ThanhNgang"></div>
@@ -242,10 +265,17 @@
     </a>
    <div class="Profile-UserImages">
    <img class="avatar" src="./images/havert.jpg" alt="">
-    <input class="input-UpdateProfileImages" type="file">
-    <input type="text" class="input-UpdateProfilename" value="Nguyễn Đạt"></input>
+   <button class="btn--textFile" onclick="document.getElementById('getFile').click()">
+        <i class="fa-solid fa-camera"></i>
+        <input class="" type='file' id="getFile" style="display:none" name="img">                  
+ </button>
+     <input type="text" class="input-UpdateProfilename" value="Nguyễn Đạt"></input>
    </div>
 </div>
+<a href="" class="top-SupportStore">
+    <i class="fa-solid fa-store"></i>
+    <h3>Smartstore</h3>
+    </a>
 </form>
 @endsection
 </body>

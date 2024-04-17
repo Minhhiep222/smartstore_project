@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UserProfile</title>
-    <link href="{{ asset('styles.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('styles.css') }}" rel="stylesheet"> -->
     <script src="{{ asset('action.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('css/userProfile.css') }}">
 </head>
 <style>
     /* .main-ProfileUser {
@@ -141,6 +142,29 @@
     {
      border-color: rgb(94, 219, 219, 0.5);
     }
+    .top-SupportStore {
+        text-decoration: none;
+        display: flex;
+        width: 100%;
+        height: 80px;
+        line-height: 60px;
+        color: black;
+        position: absolute;
+        margin-left: 860px;
+        margin-top: 10px;
+    }
+  
+    .top-SupportStore .fa-store {
+        margin-left: 100px;
+        font-size: 40px;
+        margin-top: 15px;
+        margin-right:5px;
+    }
+    .top-SupportStore h3 {
+        font-size: 29px;
+        display: inline-block;
+        margin-top: 10px;
+    }
 
   @keyframes scaleButton {
     0% {
@@ -194,7 +218,10 @@
     <p>Nguyễn Đạt</p>
    </div>
 </div>
-
+<a href="" class="top-SupportStore">
+    <i class="fa-solid fa-store"></i>
+    <h3>Smartstore</h3>
+    </a>
 <script>
 
 // document.addEventListener("DOMContentLoaded", function() {
