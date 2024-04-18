@@ -9,6 +9,10 @@
         <link type="text/css" href="/css/seller.css" rel="stylesheet">
         <link type="text/scss" href="/scss/seller.scss" rel="stylesheet">
         <link rel="stylesheet" href="/font/fontawesome-free-6.5.1-web/css/all.min.css">
+         <!-- Bootstrap icons-->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
     </head>
     <body>
         <div class="main">
@@ -210,7 +214,7 @@
                                             </div>
                                         </li>                         
                                     </ul>
-                                    <button class="header__cart-view btn btn--primary">Xem giỏ hàng</button>
+                                    <button class="header__cart-view btn btn--primary" onclick=" window.location.href = 'cart' ">Xem giỏ hàng</button>
                                 </div>
     
                             </div>
@@ -234,5 +238,6 @@
 
         </div>
         <!-- <script src="/js/action.js"></script> -->
+
     </body>
 </html>

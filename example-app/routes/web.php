@@ -38,6 +38,13 @@ Route::get('productDetail', function () {
 });
 
 
+Route::get('cart', function () {
+    return view('auth.cart');
+});
+
+Route::get('item', function () {
+    return view('auth.item');
+});
 Route::get('header', function () {
     return view('header');
 });
@@ -50,3 +57,6 @@ Route::get('seller', function () {
     return view('auth.seller');
 });
 
+Route::get('crud', function () {
+    return view('auth.crud');
+});
